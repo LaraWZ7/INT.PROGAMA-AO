@@ -78,5 +78,50 @@ color: crimson;
     overflow: scroll;
 }
 .container{
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+.rodape{
+    position: fixed;
+    bottom: 0;                               /*Fixa na parte de baixo*/
+    left: 0;                                 /*Inicia no canto esquerdo*/
+    width: 100%;                             /*Ocupa toda a largura da tela*/
+    background-color: rgb(228, 156, 228);
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.tit{
+    font-family: unset;
+    color: cornsilk;
+    text-align: center;
+}
+
+.line{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.princi{
+    flex: 1;
+    background-color: black;
+}
+
+.body{
+    margin: 0; /*Remove margens padrão para evitar barras de rolagem indese*/
+    padding: 0;
+    box-sizing: border-bo;
+}
+
+.conteudo{
+    height: 2000px; /*Exemplo de conteúdo grande para testar rolagem*/
+    background-color: dimgrey;
+}
+
+#footer{
+    font-family: unset;
 }
