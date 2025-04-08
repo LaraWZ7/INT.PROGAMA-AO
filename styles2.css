@@ -7,3 +7,34 @@ span{
 .body{
     background-color: hotpink;
 }
+
+.rodap{
+    position: fixed;
+    bottom: 0;                               /*Fixa na parte de baixo*/
+    left: 0;                                 /*Inicia no canto esquerdo*/
+    width: 100%;                             /*Ocupa toda a largura da tela*/
+    background-color: rgb(224, 58, 122);
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.pinkdeluxo{
+    background-color: beige;
+    margin: 0;
+    font-family: unset;
+}
+
+.cen{
+    font-family: unset;
+    text-align: center;
+}
+
+.proce{
+    background-color: rgb(165, 92, 128);
+    padding: 10px 40px;
+}
+
+.centro{
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+.corpo{
+    margin: 0;
+    font-family: unset;
+}
+
+.topo{
+    background-color: rgb(165, 92, 128);
+    padding: 10px 40px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a{
+    color: white;
+    padding: 14px 80px;
+    transition: background 0.5s;
+}
+
+.menu a:hover{
+    background-color: black;
+}
