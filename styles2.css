@@ -25,16 +25,43 @@ span{
     font-family: unset;
 }
 
-.cen{
-    font-family: unset;
-    text-align: center;
+.proc{
+    display: flex;
+    justify-content: center;
 }
 
-.proce{
-    background-color: rgb(165, 92, 128);
-    padding: 10px 40px;
+.cont{
+    text-align: center;
+    margin-left: 220px;
+    padding: 20px;
 }
 
-.centro{
+.ls{
     text-align: center;
+    margin-left: 220px;
+    padding: 20px;
 }
+.menu{
+    width: 200px;
+    background-color: ;
+    padding-top: 20px;
+    height:100vh ;
+    position:fixed ;
+    top: 0;
+    left: 0;
+
+}
+.menu a{
+    color: rgb(168, 80, 146);
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-bottom: 1px 10px;
+}
+    
+
+.menu a:hover{
+    background-color: black;
+}
+
+
