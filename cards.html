@@ -47,7 +47,7 @@
         }
 
         .card-content p{
-            color: beige;
+            color: black;
             font-size: 14px;
         }
 
@@ -63,7 +63,17 @@
         }
 
         .btn:hover{
-            background-color: rgb(177, 98, 111);
+            background-color: rgb(184, 95, 110);
+        }
+
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card:not(:hover){
+            opacity: 0.4;
         }
 
     </style>
@@ -72,6 +82,7 @@
     
     <div class="container">
         <div class="card">
+            <img src="linda.jpg" alt="imagem de uma pessoa feia">
             <div class="card-content">
                 <h3>Plano Básico</h3>
                 <p>Ideal para pessoas bonitas</p>
@@ -79,21 +90,20 @@
             </div>
         </div>
 
-        <div class="container">
             <div class="card">
+                <img src="mediana.jpg" alt="beleza média">
                 <div class="card-content">
-                    <h3>Plano Intermediário</h3>
-                    <p>Ideal para pessoas bonitas</p>
+                    <h3>Plano Plus</h3>
+                    <p>Ideal para belezas medianas</p>
                     <a href="####" class="btn">Assinar</a>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
             <div class="card">
+                <img src="feia.webp" alt="muita beleza">
                 <div class="card-content">
-                    <h3>Plano Avançado</h3>
-                    <p>Ideal para pessoas bonitas</p>
+                    <h3>Plano Pro Max</h3>
+                    <p>Ideal para pessoas feias</p>
                     <a href="####" class="btn">Assinar</a>
                 </div>
             </div>
