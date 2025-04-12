@@ -58,7 +58,7 @@
         }
 
         .ini-section h1{
-            font-size: 80px;
+            font-size: 70px;
             margin-bottom: 30px;
         }
 
@@ -83,7 +83,7 @@
             background-color: #000000;
         }
 
-        /*Aqui começa a nossa sessão de Sobre Nós*/
+        /*Aqui começa a nossa seção de Sobre Nós*/
 
         .sobre-section{
             background-color: #643843;
@@ -106,6 +106,108 @@
             line-height: 1.5;
         }
 
+        /* Seção de Serviços */
+        #servicos{
+            background-color: #99627A;
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card{
+            background-color: #914155;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 220px;
+            box-shadow: 0 4px 8px black;
+            cursor: pointer;
+            transition: transform 0.5s;
+            margin-top: 30px;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px black;
+            background-color: #a34a6c;
+        }
+
+        .card h3{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .card p{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .preco{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #servicos h2{
+            font-size: 30px;
+        }
+
+        /* Seção de contato */
+
+        #contato{
+            background-color: #643843;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contato h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contato-form{
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contato-form label{
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contato-form input, .contato-form textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contato-form button{
+            background-color:#643843 ;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+         
+        .contato-form button:hover{
+            background-color: #b6a6a6;
+        }
+
+        .rodap{
+            background-color: #99627A;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
 
 
     </style>
@@ -116,28 +218,77 @@
         <nav>
             <ul>
                 <li><a href="#inicio">INÍCIO</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">SERVIÇOS</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a href="#sobre">SOBRE NÓS</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
  
             </ul>
         </nav>
     </header>
 
-    <!-- Sessão de Início -->
+    <!-- Seção de Início -->
      
     <section id="início" class="ini-section">
-        <h1>Bem-Vindo ao Provedor de Código</h1>
-        <p>Códigos confiáveis para voçê!</p>
+        <h1>Bem-Vindo a LS Beauty </h1>
+        <p>Realce sua Autoestima e descubra sua melhor versão. Aqui sua beleza é a nossa maior prioridade!</p>
+        <p>Agende já sua consulta</p>
         <a href="" class="cta-button">Conheça os nossos planos!</a>
     </section>
 
-    <!-- Sessão de Sobre Nós -->
+    <!-- Seção de Sobre Nós -->
      <section id="sobre" class="sobre-section">
         <h2>Sobre Nós</h2>
-        <p>somos uma calsse dedicada ao aprendizado, com foco prático de atividades.</p>
-        <p>Estamos até fazendo o nosso site!</p>
+        <p>Oferecemos tratamentos inovadores, seguros e personalizados!</p>
+        <p>Desde preenchimentos facias a rejuvenescimento a laser!</p>
      </section>
+
+     <!--Seção de Serviços-->
+     <section id="servicos">
+        <h2> Nossos Serviços </h2>
+        <div class="cards">
+            <div class="card">
+                <h3>PREENCHIMENTOS</h3>
+                <p>temporários, semipermanentes e permanentes</p>
+                <p class="preco">R$ 1.190.99 a R$3.890.99</p>
+            </div>
+            <div class="card">
+                <h3>HARMONIZAÇÕES</h3>
+                <p>de preenchimentos a contorno facial</p>
+                <p class="preco">R$ 1.490,99 a R$10.990,99,</p>
+            </div>
+            <div class="card">
+                <h3>REJUVENESCIMENTO FACIAL</h3>
+                <p>injetável ou a laser</p>
+                <p class="preco">R$ 1.690,99 a R$29.990,99</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Control -->
+      <!-- Seção de Contatos -->
+       <section id="contato">
+        <h2>Entre em contato!</h2>
+        <p>Preencha o formulário abaixo:</p>
+
+        <form class="contato-form">
+           <label for="nome">Nome:</label>
+           <input type="text" placeholder="Seu nome" required>
+
+           <label for="email">E-mail:</label>
+           <input type="email" placeholder="E-mail" required>
+
+           <label for="mensagem">Mensagem:</label>
+           <textarea rows="5" placeholder="Escreva sua mensagem"></textarea>
+
+           <button type="submit">Enviar</button>
+        </form>
+       </section>
+
+       <footer class="rodap">
+        <p>get in touch</p>
+        &copy; by LS Beauty-2025
+       </footer>
+
 </body>
 
 </html>
