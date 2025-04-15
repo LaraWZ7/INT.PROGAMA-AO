@@ -1,0 +1,22 @@
+.cabecalho{
+    color: red;
+    font-size: 23px;
+    text-align: center;
+}
+
+.bradesco h2{
+    text-align: center;
+}
+
+.bradesco p{
+    background-color: rgb(114, 10, 10);
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.brades{
+    text-align: center;
+}
